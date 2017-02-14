@@ -10,7 +10,7 @@ def count():
     global a, text1, text2
     text2 = int(text1)*a[int(var1.get())]/a[int(var2.get())]
     lable2.config(text=str(text2))
-lable1 = Label(root, text=text1, bd=4, width=5, height=1,fg='green',font='Verdana 14')
+lable1 = Label(root, text=text1, bd=4, width=5, height=1,fg='green',font='Verdana 10')
 lable2 = Label(root, text=text2, bd=4, width=14, height=2,fg='green',font='Verdana 10')
 rb11 = Radiobutton(root, text="мм", variable=var1, value=0, command=count)
 rb12 = Radiobutton(root, text="см", variable=var1, value=1, command=count)
